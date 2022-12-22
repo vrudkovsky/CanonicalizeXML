@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope
+        xmlns:env="http://www.w3.org/2003/05/soap-envelope"
+        xmlns:ns1="http://oree.com.ua/etsua/soapsvc/bankaccountstatus/2020/09"
+        xmlns:ns2="http://oree.com.ua/ws/headers/security"
+        xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+    <env:Header>
+        <ns2:qes>MMOHVEQGCSrDnEjDnMucCgEHAuKAoMOHVDUww4dUMQIBATEOMAwGCirDnCQCAQEBAQIBMMOHBMOBBgkqw5xIw5zLnAoBBwHigKDDhwTDvwTDhwTigJg=</ns2:qes>
+        <wsa:Action>http://oree.com.ua/etsua/soapsvc/BankLimits/Upload</wsa:Action>
+        <wsa:To>https://rdn-vdr-test.oree.com.ua/index.php/bank_ws/upload</wsa:To>
+        <wsa:MessageID>uuid:1f052be8-03ae-ebca-3216-5b3a20bfeb8f</wsa:MessageID>
+        <wsse:Security
+                xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" env:mustUnderstand="1">
+            <wsse:UsernameToken>
+                <wsse:Username>ukreximbank_test</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">J4esOKsY</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">U3pWyd3ORHqzGSMgxKPrzZ+CLO3lqxcIy6sUUloMMMc=</wsse:Nonce>
+                <wsu:Created
+                        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">2022-05-23T10:05:35Z
+                </wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </env:Header>
+    <env:Body>
+        <ns1:UploadRequest>
+            <ns1:BANKLIMITS answer-required="true" date-time="2022-05-23T10:05:32Z" dtd-version="1" id="220523" message-code="301">
+                <ns1:SenderIdentification coding-scheme="NAME" id="TESTBANK"></ns1:SenderIdentification>
+                <ns1:ReceiverIdentification coding-scheme="EIC" id="62X-OPERRYNKU--3"></ns1:ReceiverIdentification>
+                <ns1:Limits date="2022-01-28T09:00:05Z">
+                    <ns1:Participant edrpou="42069164" iban="UA633226690000026030300721502" name="ТОВ «ЕНЕРДЖІКС»">
+                        <ns1:DataGroups>
+                            <ns1:TotalsData>
+                                <ns1:Data currency="UAH" type="limit" value="100000.00"></ns1:Data>
+                            </ns1:TotalsData>
+                        </ns1:DataGroups>
+                    </ns1:Participant>
+                    <ns1:Participant edrpou="42069164" iban="UA823004650000026034300704963" name="ТОВ «ЕНЕРДЖІКС»">
+                        <ns1:DataGroups>
+                            <ns1:TotalsData>
+                                <ns1:Data currency="UAH" type="limit" value="300000.00"></ns1:Data>
+                            </ns1:TotalsData>
+                        </ns1:DataGroups>
+                    </ns1:Participant>
+                </ns1:Limits>
+            </ns1:BANKLIMITS>
+        </ns1:UploadRequest>
+    </env:Body>
+</env:Envelope>

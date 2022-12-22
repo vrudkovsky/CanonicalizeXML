@@ -1,0 +1,22 @@
+<!--<ns1:UploadRequest>-->
+<!--    <ns1:BANKLIMITS answer-required="true" date-time="2022-05-23T10:05:32Z" dtd-version="1" id="220523" message-code="301">-->
+<!--        <ns1:SenderIdentification coding-scheme="NAME" id="TESTBANK"></ns1:SenderIdentification>-->
+<!--        <ns1:ReceiverIdentification coding-scheme="EIC" id="62X-OPERRYNKU&#45;&#45;3"></ns1:ReceiverIdentification>-->
+<!--        <ns1:Limits date="2022-01-28T09:00:05Z">-->
+<!--            <ns1:Participant edrpou="42069164" iban="UA633226690000026030300721502" name="ТОВ «ЕНЕРДЖІКС»">-->
+<!--                <ns1:DataGroups>-->
+<!--                    <ns1:TotalsData>-->
+<!--                        <ns1:Data currency="UAH" type="limit" value="100000.00"></ns1:Data>-->
+<!--                    </ns1:TotalsData>-->
+<!--                </ns1:DataGroups>-->
+<!--            </ns1:Participant>-->
+<!--            <ns1:Participant edrpou="42069164" iban="UA823004650000026034300704963" name="ТОВ «ЕНЕРДЖІКС»">-->
+<!--                <ns1:DataGroups>-->
+<!--                    <ns1:TotalsData>-->
+<!--                        <ns1:Data currency="UAH" type="limit" value="300000.00"></ns1:Data>-->
+<!--                    </ns1:TotalsData>-->
+<!--                </ns1:DataGroups>-->
+<!--            </ns1:Participant>-->
+<!--        </ns1:Limits>-->
+<!--    </ns1:BANKLIMITS>-->
+<!--</ns1:UploadRequest>-->
